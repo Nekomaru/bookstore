@@ -1,0 +1,58 @@
+@import "../scss/config";
+@import "../scss/breakpoint";
+@import "../scss/breakpoints";
+
+.collapsed-menu {
+	background-color: $mainColor;
+	padding: 10px $sidePadding;
+	overflow: hidden;
+}
+
+.collapsed-menu__logo {
+	float: left;
+}
+
+.collapsed-menu__show-items {
+	float: right;
+	width: 40px;
+	height: 40px;
+	background-image: url(img/hamburger.png);
+	cursor: pointer;
+	@include breakpoint($desktopBreakpoint) {
+		display: none;
+	}
+}
+
+.collapse-menu__items {
+	clear: both;
+	display: none;
+	padding-top: 10px;
+	@include breakpoint($desktopBreakpoint) {
+		padding-top: 0px;
+		float: right;
+		clear: none;
+		display: block !important;
+	}
+}
+
+.collapse-menu__item:first-child {
+	margin-top: $sidePadding;
+	border-top: 1px solid white;
+	@include breakpoint($desktopBreakpoint) {
+		border: none;
+		margin-top: 0px;
+	}
+}
+
+.collapse-menu__item {
+	display: block;
+	padding: 10px 0px;
+	text-align: center;
+	color: white;
+	border-bottom: 1px solid white;
+	@include breakpoint($desktopBreakpoint) {
+		display: inline-block;
+		margin: 0px 15px;
+		border: none;
+	}
+}

@@ -1,0 +1,65 @@
+@import "breakpoint";
+@import "breakpoints";
+@import "config";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	color: $mainColor;
+}
+
+@mixin shadow-down($size) {
+	-webkit-box-shadow: 0px $size 5px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: 0px $size 5px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: 0px $size 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+.header {
+	background-color: $mainColor;
+	padding: 10px $sidePadding;
+}
+
+.header__show-menu-button {
+	float: right;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/hamburger.png);
+	cursor: pointer;
+}
+
+.content {
+	padding: $sidePadding;
+	text-align: justify;
+	background-color: #fdf5e6;
+	@include shadow-down(2px);
+	@include breakpoint($desktopBreakpoint) {
+		float: left;
+		width: 63%;
+		box-sizing: border-box;
+	}
+}
+
+.aside {
+	padding: $sidePadding;
+	text-align: center;
+	@include breakpoint($desktopBreakpoint) {
+		float: left;
+		width: 37%;
+		max-width: 37%;
+		box-sizing: border-box;
+	}
+}
+
+.wrapper {
+	display: inline-block;
+	text-align: left;
+}
+
+.footer {
+	font-size: 16pt;
+	background: $mainColor;
+	padding: $sidePadding 0px;
+	text-align: center;
+	color: white;
+}
+

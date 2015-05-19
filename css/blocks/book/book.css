@@ -1,0 +1,11 @@
+.book {
+  width: 250px;
+  padding: 10px 0px;
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+
+.book__title {
+  margin-top: 5px; }
+
+/*# sourceMappingURL=book.css.map */

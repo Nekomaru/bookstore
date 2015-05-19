@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACL,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,QAAQ;EACjB,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,MAAM;;AAGf,YAAa;EACZ,UAAU,EAAE,GAAG",
+"sources": ["../../blocks-src/book/book.scss"],
+"names": [],
+"file": "book.css"
+}
